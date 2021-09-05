@@ -22,9 +22,6 @@ class App extends Component {
 
     if (this.state.contacts.find(el => el.name.toLowerCase() === contact.name.toLowerCase())) {
       return alert(`${contact.name} is alresdy in contacts`);
-    }
-    if ((contact.name = '')) {
-      return;
     } else
       this.setState(prevState => ({
         contacts: [contact, ...prevState.contacts],
@@ -54,7 +51,6 @@ class App extends Component {
       <>
         <Section title="Phonebook">
           <DataRecordForm onFormSubmit={this.formSubmit} />
-
           <h2>Contacts</h2>
           <FilterContact value={filter} onchangeFilter={this.changeFilter} />
           <Contacts stateApp={visibleContact} onDeleteContact={this.deleteContact} />
