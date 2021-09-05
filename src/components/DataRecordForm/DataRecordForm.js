@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import s from './DataRecordForm.module.css';
 import { FaPhoneSquareAlt } from '../../../node_modules/react-icons/fa';
 import { BsFillPersonPlusFill } from '../../../node_modules/react-icons/bs';
